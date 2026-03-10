@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TRIKARA Group adalah konsultan arsitektur terpercaya. Kami menyediakan layanan Drafting 2D, Visualisasi 3D Rendering, dan Animasi Walkthrough.">
+    <title>TRIKARA Group | Konsultan Desain Arsitektur & Rekayasa</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            light: '#f8fafc',
+                            accent: '#cda434',
+                            gray: '#64748b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-light font-sans text-brand-dark antialiased">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md border-b border-gray-200 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-x-6 group">
+                <img src="img/logo.png" alt="Logo TRIKARA Group"
+                    class="h-20 w-auto object-contain transform group-hover:scale-105 transition duration-300">
+                <span class="font-serif text-4xl font-bold tracking-widest uppercase text-brand-dark">
+                    TRIKARA GROUP<span class="text-brand-accent">.</span>
+                </span>
+            </a>
+
+            <ul class="hidden md:flex space-x-8 text-sm font-medium tracking-wide text-gray-600 uppercase">
+                <li><a href="#tentang" class="hover:text-brand-accent transition duration-300">Tentang</a></li>
+                <li><a href="#layanan" class="hover:text-brand-accent transition duration-300">Layanan</a></li>
+                <li><a href="#portofolio" class="hover:text-brand-accent transition duration-300">Portofolio</a></li>
+                <li><a href="#estimasi" class="hover:text-brand-accent transition duration-300">Estimasi</a></li>
+            </ul>
+
+            <a href="#kontak"
+                class="hidden md:inline-block border border-brand-dark px-6 py-2 text-sm uppercase tracking-wider hover:bg-brand-dark hover:text-white transition duration-300">Hubungi
+                Kami</a>
+
+            <button id="mobile-menu-btn" class="md:hidden text-brand-dark focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 absolute w-full shadow-lg">
+            <ul class="flex flex-col text-sm font-medium tracking-wide text-gray-600 uppercase px-6 py-4 space-y-4">
+                <li><a href="#tentang" class="block hover:text-brand-accent mobile-link">Tentang</a></li>
+                <li><a href="#layanan" class="block hover:text-brand-accent mobile-link">Layanan</a></li>
+                <li><a href="#portofolio" class="block hover:text-brand-accent mobile-link">Portofolio</a></li>
+                <li><a href="#estimasi" class="block hover:text-brand-accent mobile-link">Estimasi</a></li>
+                <li><a href="#kontak" class="block hover:text-brand-accent mobile-link">Hubungi Kami</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <header class="relative h-screen flex items-center justify-center">
+            <div
+                class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center">
+            </div>
+            <div class="absolute inset-0 bg-brand-dark/80"></div>
+            <div class="relative z-10 text-center px-6 max-w-4xl mx-auto mt-20">
+                <p class="text-brand-accent tracking-[0.3em] text-sm uppercase mb-4">Design, Engineering & Construction
+                </p>
+                <h1 class="font-serif text-5xl md:text-7xl font-bold text-white leading-tight mb-8">Perencanaan
+                    Presisi,<br>Eksekusi Pasti</h1>
+                <a href="#layanan"
+                    class="bg-brand-accent text-white px-8 py-4 text-sm uppercase tracking-widest hover:bg-white hover:text-brand-dark transition duration-300">Jelajahi
+                    Layanan</a>
+            </div>
+        </header>
+
+        <section id="tentang" class="py-24 bg-brand-light">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+
+                    <div class="space-y-6">
+                        <p class="text-brand-accent tracking-[0.3em] text-sm uppercase">Tentang TRIKARA Group</p>
+                        <h2 class="font-serif text-5xl font-bold text-brand-dark leading-tight">
+                            Membangun Ruang,<br>Menciptakan Nilai.
+                        </h2>
+                        <p class="text-brand-gray font-light text-lg leading-relaxed text-justify">
+                            TRIKARA Group hadir sebagai mitra strategis dalam mewujudkan visi arsitektural yang
+                            melampaui sekadar estetika visual melalui penggabungan harmoni antara keindahan desain
+                            inspiratif dan ketajaman efisiensi teknis yang terukur. Kami percaya bahwa setiap bangunan
+                            memiliki jiwa dan tujuan unik, itulah sebabnya kami menerapkan pendekatan personal yang
+                            mendalam untuk memastikan setiap jengkal ruang tidak hanya fungsional secara ergonomis,
+                            tetapi juga mampu memberikan nilai investasi jangka panjang yang nyata bagi aset properti
+                            Anda.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-8 border-t border-gray-200 pt-8 mt-8">
+                            <div>
+                                <h4 class="font-serif text-4xl font-bold text-brand-dark mb-2">10<span
+                                        class="text-brand-accent">+</span></h4>
+                                <p class="text-xs text-brand-gray uppercase tracking-widest font-semibold">Tahun
+                                    Pengalaman</p>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-4xl font-bold text-brand-dark mb-2">50<span
+                                        class="text-brand-accent">+</span></h4>
+                                <p class="text-xs text-brand-gray uppercase tracking-widest font-semibold">Proyek
+                                    Selesai</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative h-[400px] md:h-[500px] overflow-hidden group shadow-xl">
+                        <img src="asset/asset1.jpeg" alt="Proyek Trikara Group"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition duration-1000">
+                        <div class="absolute inset-0 border-8 border-white/20 m-4 pointer-events-none"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="layanan" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <h2 class="font-serif text-4xl font-bold mb-16">Layanan Utama</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12">
+                    <article class="group border-t border-gray-300 pt-6">
+                        <div
+                            class="text-5xl font-serif font-light text-gray-300 mb-6 group-hover:text-brand-accent transition duration-300">
+                            01</div>
+                        <h3 class="text-xl font-bold mb-3 uppercase tracking-wide">Drafting 2D & Gambar Kerja</h3>
+                        <p class="text-brand-gray font-light leading-relaxed">Penyusunan denah, potongan, tampak, hingga
+                            detail Engineering Design (DED).</p>
+                    </article>
+                    <article class="group border-t border-gray-300 pt-6">
+                        <div
+                            class="text-5xl font-serif font-light text-gray-300 mb-6 group-hover:text-brand-accent transition duration-300">
+                            02</div>
+                        <h3 class="text-xl font-bold mb-3 uppercase tracking-wide">Visualisasi 3D Rendering</h3>
+                        <p class="text-brand-gray font-light leading-relaxed">Pemodelan fotorealistik untuk eksterior
+                            dan interior.</p>
+                    </article>
+                    <article class="group border-t border-gray-300 pt-6">
+                        <div
+                            class="text-5xl font-serif font-light text-gray-300 mb-6 group-hover:text-brand-accent transition duration-300">
+                            03</div>
+                        <h3 class="text-xl font-bold mb-3 uppercase tracking-wide">Animasi & Presentasi</h3>
+                        <p class="text-brand-gray font-light leading-relaxed">Produksi video walkthrough sinematik untuk
+                            kebutuhan pemasaran.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="portofolio" class="py-24 bg-brand-light">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <h2 class="font-serif text-4xl font-bold text-center mb-16">Karya Terpilih</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="relative group overflow-hidden h-96">
+                        <img src="asset/asset 4.jpeg
+                        " class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
+                        <div
+                            class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-8">
+                            <span class="text-brand-accent text-sm tracking-widest uppercase mb-2">Ballroom</span>
+                            <h3 class="text-white text-2xl font-serif">Kawasan Elite Jakarta Pusat</h3>
+                        </div>
+                    </div>
+                    <div class="relative group overflow-hidden h-96">
+                        <img src="asset/asset 2.jpeg"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
+                        <div
+                            class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-8">
+                            <span class="text-brand-accent text-sm tracking-widest uppercase mb-2">Rumah Ibadah</span>
+                            <h3 class="text-white text-2xl font-serif">Masjid Al Fatih</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="estimasi" class="py-24 bg-white border-t border-gray-200">
+            <div class="max-w-4xl mx-auto px-6 lg:px-12">
+                <div class="text-center mb-12">
+                    <h2 class="font-serif text-4xl font-bold mb-4">Kalkulator Estimasi</h2>
+                    <p class="text-brand-gray font-light">Hitung biaya secara transparan sebelum memulai proyek.</p>
+                </div>
+                <div class="bg-brand-light p-8 md:p-12 shadow-sm border border-gray-100 relative">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <label
+                                class="block text-sm uppercase tracking-widest text-brand-dark font-semibold mb-3">Layanan</label>
+                            <select id="layanan" class="w-full p-4 border border-gray-300 bg-white">
+                                <option value="15000">Desain 2D (Rp 15.000 / m2)</option>
+                                <option value="35000">Desain 3D (Rp 35.000 / m2)</option>
+                                <option value="50000">Paket Komplit (Rp 50.000 / m2)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label
+                                class="block text-sm uppercase tracking-widest text-brand-dark font-semibold mb-3">Luas
+                                (m2)</label>
+                            <input type="number" id="luas" placeholder="Contoh: 150"
+                                class="w-full p-4 border border-gray-300 bg-white">
+                        </div>
+                    </div>
+                    <button id="btnHitung"
+                        class="w-full bg-brand-dark text-white px-8 py-4 text-sm uppercase tracking-widest hover:bg-brand-accent transition duration-300">Hitung
+                        Estimasi</button>
+                    <div id="resultBox" class="mt-8 p-8 bg-white border border-gray-200 text-center hidden">
+                        <p class="text-brand-gray text-sm uppercase tracking-widest mb-2">Estimasi Biaya</p>
+                        <div id="totalHarga" class="font-serif text-4xl font-bold text-brand-dark mb-6">Rp 0</div>
+                        <div class="flex flex-col sm:flex-row justify-center gap-4">
+                            <button id="btnWA1"
+                                class="bg-green-600 text-white px-6 py-3 text-xs uppercase tracking-widest hover:bg-green-700 transition">Admin
+                                1</button>
+                            <button id="btnWA2"
+                                class="bg-green-700 text-white px-6 py-3 text-xs uppercase tracking-widest hover:bg-green-800 transition">Admin
+                                2</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="kontak" class="bg-brand-dark text-white pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 border-b border-gray-700 pb-16">
+                <div>
+                    <h2 class="font-serif text-4xl mb-6">Mari Diskusikan Proyek Anda.</h2>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/6289699473145" target="_blank"
+                            class="inline-flex items-center bg-brand-accent px-6 py-4 text-xs uppercase tracking-widest hover:bg-white hover:text-brand-dark transition duration-300">WA
+                            Admin 1</a>
+                        <a href="https://wa.me/6281320007741" target="_blank"
+                            class="inline-flex items-center border border-brand-accent text-brand-accent px-6 py-4 text-xs uppercase tracking-widest hover:bg-brand-accent hover:text-white transition duration-300">WA
+                            Admin 2</a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <div>
+                        <h4 class="text-brand-accent text-sm tracking-widest uppercase mb-2">Kontak Langsung</h4>
+                        <p class="text-gray-400 font-light">+62 896-9947-3145 (Admin 1)</p>
+                        <p class="text-gray-400 font-light">+62 813-2000-7741 (Admin 2)</p>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-12 text-gray-500 text-sm">&copy; 2026 TRIKARA Group. Hak Cipta Dilindungi. By:Arsyaf Dwi Nur
+                Prasetyo</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
